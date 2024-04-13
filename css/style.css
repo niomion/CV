@@ -2,17 +2,23 @@
     box-sizing: border-box;
 }
 
-@media only screen and (max-width: 768px) {
-.flex-container {margin-left: 0%;}
-.leftc { width: 100%; }
-.rightc { width: 100%; }
-.footer { width: 100%; }
-}
-
 body {
     background-image: url(/img/background.jpg);
-    background-color: rgb(28, 189, 89);
     margin: 0;
+}
+
+p, li {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: larger;
+}
+
+li { margin-bottom: 3%;}
+
+.cin > p {
+    margin-left: 2%;
 }
 
 img {
@@ -20,35 +26,71 @@ img {
     height: auto;
   }
 
+  h1.font {
+    font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+  }
+
+ hr.test {
+    margin: 0;
+    border-top: 3px solid #000000;
+  }
+
+  h1.header {
+    margin: 0;
+    margin-top: 1vw;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .progressbar {
+    margin-left: 1%;
+    width: 97%;
+  }
 /* Флекс-Контейнери */
 
 .flex-container {
-    margin-left: 4%;
     display: flex;
+    justify-content: center;    
 }
 
 .flex-container > div {
-    background-color: white;
     margin-top: 1%;
 }
 
 .footer {
+    background-color: white;
     width: 96%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 1%;
 }
 
 .leftc {
+    background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 30%; 
     margin-right: 1%;
-    height: 800px;
 }
 
-.leftcin {
+.cin {
     margin: 1%;
 }
 
 .rightc {
+    background-color: white;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 65%; 
+    max-height: 100%;
 }
+
+/*Чота*/
+@media only screen and (max-width: 768px) {
+    .flex-container {margin: 2%; flex-direction: column;}
+    .leftc { width: 100%; margin-right: 0%; margin-bottom: 2%;}
+    .rightc { width: 100%; }
+    .footer { width: 100%; }
+    }
