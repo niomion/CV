@@ -15,7 +15,7 @@ p, li {
     font-size: larger;
 }
 
-li { margin-bottom: 3%;}
+.cin > li { margin-bottom: 3%;}
 
 .cin > p {
     margin-left: 2%;
@@ -51,7 +51,19 @@ img {
     margin-left: 1%;
     width: 97%;
   }
+
+
+
 /* Флекс-Контейнери */
+
+.flex-link {
+    display: flex;
+    justify-content: center; 
+}
+
+.flex-link > div {
+padding-right: 1%;
+}
 
 .flex-container {
     display: flex;
@@ -63,6 +75,7 @@ img {
 }
 
 .footer {
+    padding: 1%;
     background-color: white;
     width: 96%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
